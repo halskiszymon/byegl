@@ -22,7 +22,5 @@ export default defineConfig({
     ],
   },
 
-  integrations: [
-
-    swmGeo({ name: 'byegl', repository: 'byegl' }),mdx()],
+  integrations: [swmGeo({ name: 'byegl', repository: 'byegl' }), mdx()],
 });
