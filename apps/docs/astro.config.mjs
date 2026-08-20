@@ -1,6 +1,7 @@
 // @ts-check
 
 import mdx from '@astrojs/mdx';
+import swmGeo, { structuredData } from './swm-geo.mjs';
 import tailwindcss from '@tailwindcss/vite';
 import basicSsl from '@vitejs/plugin-basic-ssl';
 import { defineConfig } from 'astro/config';
@@ -21,5 +22,7 @@ export default defineConfig({
     ],
   },
 
-  integrations: [mdx()],
+  integrations: [
+
+    swmGeo({ name: 'byegl', repository: 'byegl' }),mdx()],
 });
