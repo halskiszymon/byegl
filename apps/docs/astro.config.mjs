@@ -1,7 +1,7 @@
 // @ts-check
 
 import mdx from '@astrojs/mdx';
-import swmGeo, { structuredData } from './swm-geo.mjs';
+import swmGeo from './swm-geo.mjs';
 import tailwindcss from '@tailwindcss/vite';
 import basicSsl from '@vitejs/plugin-basic-ssl';
 import { defineConfig } from 'astro/config';
